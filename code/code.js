@@ -34,3 +34,68 @@ amount = 2
 
 //GOOD
 setAmount(2)
+
+//Stateless
+let numb = 2;
+
+//Stateful function
+function square() {
+    return number * number
+}
+number = square()
+
+//Stateless function
+const square = n => n * n;
+
+//Caracteristica das funções
+const random = (number, Math) =>
+Math.floor(Math.random() * number);
+
+//recursive
+//Find the factorial of a number
+const factorial = x => {
+    //if number is 0
+    if (x === 0){
+        return 1;
+    }
+    return x * factorial(x - 1);
+}
+
+//Função Impura
+
+//Exemplo 1: está dependendo de dado externo
+// Que não foi passado como parâmetro
+function calculateCircumference(radius){
+    return Math.PI * (radius + radius)
+}
+
+//Exemplo 2: está alterando um dado externo
+let person = {
+    name: 'Rafael Carmada',
+    age: 'jovem'
+}
+function changeName(name) {
+    person.name = name 
+}
+//Função pura
+
+//Exemplo 1 
+const calculateCircumference = function(pi, radius) {
+    return pi * (radius + radius)
+}
+//Com arrow function
+const calculateCircumference = (pi, radius) =>
+pi * (radius + radius)
+
+//Exemplo 2
+const changePersonalName = (person, name) => 
+{person, name}
+
+//First Class Function
+const sayMyName = () => console.log('Mayk')
+const runFunction = fn => fn()
+
+runFunction(sayMyName)
+runFunction(() => console.log('discover'))
+
+console.log(runFunction(Math.random))
