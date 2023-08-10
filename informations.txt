@@ -67,3 +67,9 @@
 - O que fazer e não como fazer. 
 - Não há uma necessidade de um passo-a-passo no código.
 - Programação funcional é um tipo de paradigma declarativo.
+
+* Imutabilidade
+
+- Uma variável não vai variar 
+- Se você precisar mudar uma variável, você não vai mudar, você cria uma nova.
+
