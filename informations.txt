@@ -105,7 +105,12 @@ Caracteristicas das funções na programação funcional.
 - Não irá modificar nenhum dado
 - Não irá guardar nenhum estado
 
-* First class function
+* First-class function
 
 - Podem estar em qualquer lugar, inclusive, como parâmetro de outras funções
 - A função poderá ser entendida como uma variável
+
+* Higher-order function
+
+- Funções que recebem funções como argumentos
+- Funções que poderão retornar outras funções 
