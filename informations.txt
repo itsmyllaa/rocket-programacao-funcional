@@ -114,3 +114,8 @@ Caracteristicas das funções na programação funcional.
 
 - Funções que recebem funções como argumentos
 - Funções que poderão retornar outras funções 
+
+* Composição de funções
+
+- Um encadeamento de funções
+- Uma função que retorna um dado e vai para outra função, que retorna um dado e vai para outra função que retorna...

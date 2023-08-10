@@ -121,3 +121,10 @@ const wait1000 = pause(1000)
 
 wait200(() => console.log('waiting 200ms'))
 wait1000(() => console.log('waiting 1000ms')) 
+
+//Composição de funções
+
+const people = ['Rafa, Diego, Dani, Rod']
+const upperCasePeopleThatStartsWithD = people
+.filter(person => person.startsWith('D'))
+.map(dperson => dperson.toUpperCase())
